@@ -217,3 +217,38 @@ grid-template-columns: 1fr;
 flex-direction: column;
 }
 }
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #ffffff;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 760px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
