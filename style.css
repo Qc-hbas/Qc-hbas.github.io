@@ -229,10 +229,11 @@ flex-direction: column;
 }
 
 .profile-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 220px;
+  height: 280px;
+  border-radius: 24px;
   object-fit: cover;
+  object-position: center top;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   background: #ffffff;
@@ -248,7 +249,8 @@ flex-direction: column;
   }
 
   .profile-photo {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 230px;
+    border-radius: 20px;
   }
 }
